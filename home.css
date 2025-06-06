@@ -43,6 +43,7 @@ body{
     transition: .3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
+    animation-delay: calc(.2s * var(--i));
 }
 
 .navbar a:hover{
@@ -109,10 +110,10 @@ body{
     font-size: 37px;
     color: #0ef;
     text-decoration: none;
-    transition: .5s 0;
+    transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var);
+    animation-delay: calc(.1s * var(--i));
     margin: 30px 15px 30px 0;
 }
 
@@ -131,6 +132,9 @@ body{
     color: #312662;
     text-decoration: none;
     font-weight: 600;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: 1s;
 }
 
 .btn-box:hover{
